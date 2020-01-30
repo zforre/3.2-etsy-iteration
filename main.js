@@ -40,8 +40,8 @@ console.log(findGbp); //not sure how to display correctly
 
 // 4. Show me how to find which items are made of wood. Please console.log the ones you find.
 
-let whatsWood = items.indexOf((item) => {
-  return item.materials === "wood";
+let whatsWood = items.filter((item) => {
+  return item.materials.includes("wood");
 });
 
 console.log(whatsWood); //need help
